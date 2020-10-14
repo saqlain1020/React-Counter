@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-white: #f4faf8;
+  --color-golden-yellow: #f9ca28;
+  --color-black: #222;
+  --color-background: #e9b520;
+}
+.containerWrapper {
+  background-color: var(--color-background);
+  height: 100vh;
+  color: var(--color-white);
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 500px;
+  border: 10px solid var(--color-black);
+  width: 350px;
+  border-radius: 40px;
+  display: flex;
+background-color: var(--color-golden-yellow);
+  justify-content: space-evenly;
+  flex-flow: column;
+}
+.mainHeading {
+  color: var(--color-black);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  /* padding-top: 10px; */
+}
+.counterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+.counter {
+  height: 200px;
+  width: 200px;
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 2px 1px var(--color-black);
+  /* animation: counter 500ms ease-in-out 500ms 1 forwards; */
+}
+@keyframes counter {
+  0% {
+    /* height: 10px; */
+    box-shadow: 0px 0px 0px 0px var(--color-black);
+  }
+  50% {
+  }
+  95% {
+    box-shadow: 0px 0px 5px 2px var(--color-black);
+  }
+  100% {
+    /* height: 100px; */
+    box-shadow: 2px 2px 1px var(--color-black);
+  }
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 110px;
+  height: 40px;
+  background-color: var(--color-white);
+  /* border: 3px solid var(--color-black); */
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  outline-width: 0;
+}
